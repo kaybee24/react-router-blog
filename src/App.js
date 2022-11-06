@@ -5,7 +5,7 @@ import NewPost from './pages/NewPost.js';
 import PostPage from './pages/PostPage.js';
 import Error from './pages/Error.js';
 import { Route, Routes, useNavigate } from 'react-router-dom';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 function App() {
   const [posts, setPosts] = useState([{
@@ -34,7 +34,7 @@ function App() {
   }])
 
   const [search, setSearch] = useState('')
-  const [searchResults, setSearchResults] = useState([])
+  // const [searchResults, setSearchResults] = useState([])
   const navigate = useNavigate();
 
   const handleDelete = (id) => {
