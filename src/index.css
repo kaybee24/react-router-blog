@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
 
 * {
   margin: 0;
@@ -12,7 +13,8 @@ html {
 
 body {
   min-height: 100vh;
-  font-family: 'Open Sans', sans-serif;
+  min-width: 100vw;
+  font-family: 'Lato', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: flex;
@@ -28,31 +30,28 @@ body {
 
 .App {
   width: 100%;
-  max-width: 800px;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  border: 1px solid #333;
   box-shadow: 0px 0px 15px gray;
 }
 
-.Header, .Footer {
+.Header, 
+.Footer {
   width: 100%;
-  background-color: #66d8f5;
+  background-color: #f9cc3d;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.Header h1 {
-  font-size: 1.5rem;
-}
-
-.Header svg {
-  font-size: 2rem;
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .Footer {
@@ -63,7 +62,7 @@ body {
 
 .Nav {
   width: 100%;
-  background-color: #333;
+  background-color: #212121;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -76,7 +75,7 @@ body {
 }
 
 .searchForm input[type="text"] {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
   width: 100%;
   min-height: 48px;
   font-size: 1rem;
@@ -125,7 +124,11 @@ body {
   cursor: pointer;
 }
 
-.Home, .NewPost, .PostPage, .About, .Missing {
+.Home, 
+.NewPost, 
+.PostPage, 
+.About, 
+.Error {
   width: 100%;
   flex-grow: 1;
   padding: 1rem;
@@ -145,7 +148,7 @@ body {
 
 .Home .post a, 
 .Home .post a:visited {
-  color: #000;
+  color: #212121;
 }
 
 .post:first-child {
@@ -176,7 +179,7 @@ body {
 
 .newPostForm input[type='text'], 
 .newPostForm textarea {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
   width: 100%;
   min-height: 48px;
   font-size: 1rem;
@@ -198,11 +201,6 @@ body {
   padding: 0.5rem;
   font-size: 1rem;
   cursor: pointer;
-}
-
-.Missing h2, .PostPage h2, 
-.Missing p, .PostPage p {
-  margin-bottom: 1rem;
 }
 
 .PostPage button {
@@ -245,7 +243,7 @@ body {
   .Nav li:hover a, 
   .Nav li:focus a  {
     background-color: #eee;
-    color: #333;
+    color: #212121;
   }
 
   .searchForm {
@@ -260,12 +258,4 @@ body {
   .newPostForm textarea {
     height: 300px;
   }
-}
-
-@media only screen and (min-width: 992px) {
-
-  .Header svg {
-    font-size: 3rem;
-  }
-
 }
