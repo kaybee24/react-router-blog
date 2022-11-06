@@ -1,8 +1,10 @@
-import React from 'react'
+import React from 'react';
 
 const newPost = () => {
     return (
-        <main>newPost</main>
+        <main className='NewPost'>
+            <h1>newPost</h1>
+        </main>
     )
 }
 

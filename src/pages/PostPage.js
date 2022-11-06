@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 const postPage = () => {
     return (
-        <main>
-            <h1>postPage</h1>
+        <main className='PostPage'>
+            <h1>PostPage</h1>
         </main>
     )
 }
