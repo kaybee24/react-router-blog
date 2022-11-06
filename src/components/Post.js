@@ -13,6 +13,9 @@ const Post = ({ post }) => {
                     ? post.body
                     : `${(post.body).slice(0, 25)}...`
             }</p>
+            <Link to={`post/${post.id}`}>
+                <button>Go to Post</button>
+            </Link>
         </article>
     )
 }
